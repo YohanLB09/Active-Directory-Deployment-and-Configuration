@@ -21,33 +21,25 @@ In this guided lab, we will install Active Directory Domain Services (AD DS) on 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
--Step 1: Install Active Directory Domain Services 
--Step 2: Promote the Domain Controller VM 
--Step 3: Log back in the Domain controller
--Step 4: Create two Organizational Units (OUs)
--Step 5: Create a Domain Admin user within the domain
--Step 6: Login back in as the Domain admin user
--Step 7: Join the Client VM to your domain
+- Step 1: Install Active Directory Domain Services 
+- Step 2: Promote the Domain Controller VM 
+- Step 3: Log back in the Domain controller
+- Step 4: Create two Organizational Units (OUs)
+- Step 5: Create a Domain Admin user within the domain
+- Step 6: Login back in as the Domain admin user
+- Step 7: Join the Client VM to your domain
 
 <h2>Project Walkthrough</h2>
 
 <h3>Step 1: Install Active Directory Domain Services</h3>
 
 <p>
-<img src="https://i.imgur.com/h3N5bbe.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/v4Xd5W0.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--Once logged in to your Azure account, browse to "Resource groups" from the navigation pane.
+-Log in the Domain controller VM, navigate to "Server Manager" -> click on "Add roles and features" -> click on "Next" until you get to "Server Roles; check the box for "Active Directory and Domain Services" -> click on "Next" again until you get to "Confirmation"; check the box for "Restart the destination server automatically if required"  -> "Yes"  -> click on "Install" to confirm the installation process.
 
--Click on "Create".
-
--Make sure the correct Subscription is choosen.
-
--Enter a Resource group name.
-
--Choose the appropriate region depending on your needs
-
--Click on "Review + Create" to complete the configuration process.
+This step installs the Active Directory Domain Services (AD DS) software on the Domain controller VM. Once configured with the Domain controller VM, the AD DS will allow the server to function as a domain controller, capable of managing users, computers, and security policies within a domain. The automatic restart ensures the installation completes properly.
 </p>
 <br />
 
