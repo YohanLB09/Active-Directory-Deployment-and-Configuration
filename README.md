@@ -3,7 +3,9 @@
 </p>
 
 <h1>Active Directory - Deployment and Configuration</h1>
-In this guided lab, <br />
+In this guided lab, we will install Active Directory Domain Services (AD DS) on the Server VM, create a new domain, establish an administrative user, and join the Client VM to the newly created domain.<br />
+
+<br />This project is a continuation of [Active Directory: Infrastructure Setup](https://github.com/YohanLB09/Active-Directory-Infrastucture-Setup), so this project picks up where we left off.<br />
 
 <h2>Environments and Technologies Used</h2>
 
