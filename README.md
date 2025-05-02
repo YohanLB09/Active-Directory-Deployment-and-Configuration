@@ -182,21 +182,14 @@ Since we previously configured the Client VM DNS settings with the private IP ad
 
 
 <p>
-<img src="" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/BMU1Y6g.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
-
+-For organizational purposes, you can also create a "_CLIENTS" OU and drag the Client VM into it.
 </p>
 <br />
 
 
-<p>
-<img src="" height="100%" width="100%" alt="Configuration step"/>
-</p>
-<p>
-
-</p>
-<br />
 
 
 <h2>Active Directory Deployment and Configuration completed!</h2>
