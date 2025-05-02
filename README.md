@@ -159,7 +159,7 @@ For the specific testing objectives of this lab only, we are deviating from secu
 
 <h2>Active Directory Deployment and Configuration completed!</h2>
 
-<b>We've successfully deployed the foundational virtual machine infrastructure, establishing a Server VM that will eventually be promoted as a Domain controller and a Client VM within the same Azure virtual network, configured for basic communication. (Next lab description). Remember to stop the VMs in the Azure Portal when not in use to manage costs effectively.</b>
+<b>Remember to stop the VMs in the Azure Portal when not in use to manage costs effectively.</b>
 <br />
 <br />
 </p>
