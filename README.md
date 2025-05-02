@@ -86,17 +86,20 @@ After promoting the server to a domain controller in Step 2, the authentication 
 
 
 
-<h3>Step 4: Set a static IP address for the Server VM</h3>
+<h3>Step 4: Create two Organizational Units (OUs)</h3>
 
 <p>
-<img src="https://i.imgur.com/en3mRbS.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/TsH7u6u.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--From within the Server VM's settings in Azure, select "Networking" -> "Network settings" -> click on the "link" under Network interface / IP configuration to access the NIC settings -> "ipconfig1" -> Next to Allocation, select "Static" ->  "Save".
+-Once logged in to the domain controller account, navigate to "Active Directory Users and Computers" (ADUC) from the Windows search bar.
 
--Additionally, take note of the Server VM's private IP address, as we will need it for later (use Notepad).
+-Before creating a domain admin user, we have to create an Organizational Unit (OU). To do so, from within ADUC, right click on "mydomain" -> "New" -> "Organizational Unit" -> type " _EMPLOYEE" -> "OK"
 
-We set a static IP address for Server VM because the client VM needs a reliable and unchanging address to consistently locate the domain services, especially for DNS resolution which is crucial for joining the domain.
+-Create a another OU for "_ADMINS". 
+The purpose of creating these Organizational Units (OUs) is to organize and manage objects (like users, computers, and groups) within your Active Directory domain. Think of OUs as folders that help you logically structure your network resources.
+
+In this step, we are creating two OUs: "_EMPLOYEES" and "_ADMINS". This allows to group employee accounts separately from administrator accounts, making it easier to apply specific policies, delegate administrative tasks, and manage these groups effectively in the future. The underscore at the beginning of the names often helps to keep these important OUs at the top of the list in ADUC for easy access.
 </p>
 <br />
 
