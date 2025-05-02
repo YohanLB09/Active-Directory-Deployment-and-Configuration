@@ -97,6 +97,7 @@ After promoting the server to a domain controller in Step 2, the authentication 
 -Before creating a domain admin user, we have to create an Organizational Unit (OU). To do so, from within ADUC, right click on "mydomain" -> "New" -> "Organizational Unit" -> type " _EMPLOYEE" -> "OK"
 
 -Create a another OU for "_ADMINS". 
+
 The purpose of creating these Organizational Units (OUs) is to organize and manage objects (like users, computers, and groups) within your Active Directory domain. Think of OUs as folders that help you logically structure your network resources.
 
 In this step, we are creating two OUs: "_EMPLOYEES" and "_ADMINS". This allows to group employee accounts separately from administrator accounts, making it easier to apply specific policies, delegate administrative tasks, and manage these groups effectively in the future. The underscore at the beginning of the names often helps to keep these important OUs at the top of the list in ADUC for easy access.
