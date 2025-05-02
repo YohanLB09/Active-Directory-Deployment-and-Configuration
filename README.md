@@ -110,23 +110,21 @@ In this step, we are creating two OUs: "_EMPLOYEES" and "_ADMINS". This allows t
 <h3>Step 5: Disable the Server VM's Firewall</h3>
 
 <p>
-<img src="https://i.imgur.com/tR8CUix.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/0T6Lo5u.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--Connect to the Server VM using its public IP address via Remote Desktop Connection.
+-Now that the OUs have been created, we can start setting up a domain admin user which we will add to the "_ADMINS" OU. 
+First, right click on the "_ADMINS" OU's folder -> "New" -> "User" -> create a name and username for the new user (e.g.: Katy Doe / katy_admin) -> "Next -> create credentials for the account (keep note of it) -> uncheck the box for "User must change password at next logon" -> "Next" -> "Finish".  
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/atfLXeH.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/vXNNFWI.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--Once logged in, use the "Windows key" + "R", then type "wf.msc" (shortcut to access the Windows Defender firewall).
-
--From there, disable the firewall (all profiles).
-
-For the specific testing objectives of this lab only, we are deviating from security best practices.
+-Even though we created an account called "katy_admin" (or whichever you choose) and added it to the "_ADMINS" OU, it is still not officially considered a domain admin account. To remediate to this, we need to add the user account to the built-in domain admin security group.
+To do so, right click on the user account -> "Properties" -> "Member of" -> "Add" -> type "Domain Admins" -> "Check Names" -> "OK" -> "Apply" -> "OK".
 </p>
 <br />
 
