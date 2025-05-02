@@ -133,6 +133,68 @@ This step establishes a dedicated administrative account with the necessary perm
 
 
 
+<h3>Step 6: Login back in as the Domain admin user</h3>
+
+<p>
+<img src="https://i.imgur.com/vh2DONt.png" height="30%" width="60%" alt="Configuration step"/>
+</p>
+<p>
+-Log out / close the connection to the Domain controller VM and log back in as “mydomain.com\kate_admin"
+  
+This account will be used as the main admin account for the remaining of this lab. 
+</p>
+<br />
+
+
+
+
+<h3>Step 7: Join the Client VM to your domain</h3>
+
+<p>
+<img src="" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+
+</p>
+<br />
+
+
+<p>
+<img src="" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+
+</p>
+<br />
+
+
+<p>
+<img src="" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+
+</p>
+<br />
+
+
+<p>
+<img src="" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+
+</p>
+<br />
+
+
+<p>
+<img src="" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+
+</p>
+<br />
+
+
 <h2>Active Directory Deployment and Configuration completed!</h2>
 
 <b>We've successfully installed Active Directory on the domain controller VM, created OUs for organizational purposes, created a domain admin user account, and joined the client VM to the domain. In the next lab found [here](https://github.com/YohanLB09/Active-Directory-Deployment-and-Configuration), we'll create users in Powershell by running a script, and then manage the accounts and group policy.  Remember to stop the VMs in the Azure Portal when not in use to manage costs effectively.</b>
