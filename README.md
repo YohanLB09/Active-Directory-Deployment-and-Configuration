@@ -125,6 +125,8 @@ First, right click on the "_ADMINS" OU's folder -> "New" -> "User" -> create a n
 <p>
 -Even though we created an account called "katy_admin" (or whichever you choose) and added it to the "_ADMINS" OU, it is still not officially considered a domain admin account. To remediate to this, we need to add the user account to the built-in domain admin security group.
 To do so, right click on the user account -> "Properties" -> "Member of" -> "Add" -> type "Domain Admins" -> "Check Names" -> "OK" -> "Apply" -> "OK".
+
+This step establishes a dedicated administrative account with the necessary permissions to manage the entire domain. By creating a separate user and adding it to the "Domain Admins" group, you follow the principle of least privilege for your everyday user account while having a specific account for administrative tasks.
 </p>
 <br />
 
