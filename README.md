@@ -61,7 +61,7 @@ From within Server Manager, click on the flag (left side of the "Manage tab"  ->
 <img src="https://i.imgur.com/0LC4vBk.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--You should be automatically logged off the Domain Controller VM as it has now been (tbc).
+-You should be automatically logged off the Domain Controller VM.
 
 This step officially promotes the Server VM to a domain controller by installing the necessary domain services and configuring it as the root of a new Active Directory forest (e.g., mydomain.com). This establishes the foundational structure for the domain, including the domain naming system and security boundaries. The automatic logoff indicates the server is restarting to finalize the domain controller configuration.
 </p>
@@ -71,35 +71,15 @@ This step officially promotes the Server VM to a domain controller by installing
 
 
 
-<h3>Step 3: Create a Server VM</h3>
+<h3>Step 3: Log back in the Domain controller</h3>
 
 <p>
-<img src="https://i.imgur.com/OdBIFfT.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/XW4KeRE.png" height="30%" width="60%" alt="Configuration step"/>
 </p>
 <p>
--Browse to "Virtual machines" from the navigation pane.
+-Restart and then log back into the Domain controller VM (previously called Server VM). Instead of logging in as a local user, we will connect as "mydomain.com\labuser007 (you username may be different after the "\").
 
--Click on "Create".
-
--Select the previously created Resource Group.
-
--Create a name for the Server VM (e.g.: dc-1).
-
--Pick the same Region as the Resource group and Virtual network.
-
--For the image, choose: "Windows Server 2022 Datacenter: Azure Edition - x64 Gen2".
-
--Select a VM size; having at least 2 vcpus and 8 GiB memory is recommended.
-
--Create a username and a password (write them down in Notepad for futur use).
-
--Leave the other options at their default configuration and move on to the Networking section.
-
--In the Networking section, select the previously created Virtual network.
-
--Leave all the other options at their default configuration and click on "Review + create".
-
-This step creates an Azure virtual machine using Windows Server 2022 within your existing resource group and virtual network. This VM, with specified size and initial credentials, is being provisioned to later be configured as the domain controller.
+After promoting the server to a domain controller in Step 2, the authentication mechanism changes. Instead of logging into the local machine's user database, the server now authenticates against the newly created domain (mydomain.com). Logging in as "mydomain.com\labuser007" verifies that the domain services are running correctly and that domain-based user authentication is now active. This is different from local login because the user's credentials are being checked against the domain's directory, not just the local server's user accounts.
 </p>
 <br />
 
