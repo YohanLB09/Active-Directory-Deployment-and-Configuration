@@ -19,11 +19,17 @@ In this guided lab, <br />
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
+-Step 1: Install Active Directory Domain Services 
+-Step 2: Promote the Domain Controller VM 
+-Step 3: Log back in the Domain controller
+-Step 4: Create two Organizational Units (OUs)
+-Step 5: Create a Domain Admin user within the domain
+-Step 6: Login back in as the Domain admin user
+-Step 7: Join the Client VM to your domain
 
+<h2>Project Walkthrough</h2>
 
-<h2>Deployment and Configuration Steps</h2>
-
-<h3>Step 1: Create a Resource Group</h3>
+<h3>Step 1: Install Active Directory Domain Services</h3>
 
 <p>
 <img src="https://i.imgur.com/h3N5bbe.png" height="100%" width="100%" alt="Configuration step"/>
