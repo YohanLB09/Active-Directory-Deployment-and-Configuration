@@ -151,28 +151,32 @@ This account will be used as the main admin account for the remaining of this la
 <h3>Step 7: Join the Client VM to your domain</h3>
 
 <p>
-<img src="" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/kJvnVdt.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
+-First, login to the Client VM as the original local admin. 
 
-</p>
-<br />
+-From within the Client VM, right-click on the start menu icon and select "System"-> "Rename this PC (advanced)" -> "Change" -> Under "Member of",  select "Domain" -> type "mydomain.com" -> "OK" -> enter the credentials of the previously configured Domain admin user (mydomain.com\katy_admin) -> "OK".
 
-
-<p>
-<img src="" height="100%" width="100%" alt="Configuration step"/>
-</p>
-<p>
-
+Since we previously configured the Client VM DNS settings with the private IP address of the Domain controller VM (previously referred to as the Server VM), the Client VM is able to locate the Domain controller for the domain (mydomain.com).
 </p>
 <br />
 
 
 <p>
-<img src="" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/wYqjq11.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
+-Upon validating the credentials to add the Client VM to the "mydomain.com" domain, you will be prompt to restart the computer automatically. You can go ahead and accept the restart to apply the changes.
+</p>
+<br />
 
+
+<p>
+<img src="https://i.imgur.com/otPOxka.png" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+-Additionally, go back to ADUC in the Domain controller VM, to verify that the Client VM has been correctly added to the domain. To do so, expand "mydomain.com" -> "Computers" -> double click it to check its properties.
 </p>
 <br />
 
