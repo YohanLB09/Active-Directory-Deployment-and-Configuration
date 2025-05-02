@@ -107,7 +107,7 @@ In this step, we are creating two OUs: "_EMPLOYEES" and "_ADMINS". This allows t
 
 
 
-<h3>Step 5: Disable the Server VM's Firewall</h3>
+<h3>Step 5: Create a Domain Admin user within the domain</h3>
 
 <p>
 <img src="https://i.imgur.com/0T6Lo5u.png" height="100%" width="100%" alt="Configuration step"/>
