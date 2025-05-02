@@ -46,27 +46,27 @@ This step installs the Active Directory Domain Services (AD DS) software on the 
 
 
 
-<h3>Step 2: Create a Virtual Network and Subnet</h3>
+<h3>Step 2: Promote the Domain Controller VM </h3>
 
 <p>
-<img src="https://i.imgur.com/RWi9J3w.png" height="100%" width="100%" alt="Configuration step"/>
+<img src="https://i.imgur.com/RWEPWGQ.png" height="100%" width="100%" alt="Configuration step"/>
 </p>
 <p>
--Browse to "Virtual Networks" from the navigation pane.
-
--Click on "Create".
-
--Select the previously created Resource group.
-
--Create a name for the Virtual Network.
-
--Choose the same Region as the Resouce group.
-
--Leave all other settings as default and click on "Review + Create".
-
-The virtual network and subnet provide an isolated network space in Azure, enabling communication between hosts within the same logical network.
+From within Server Manager, click on the flag (left side of the "Manage tab"  -> "Promote this server to a domain controller"  ->  select "Add a new forest"  ->  Create a "Root domain name" (e.g.: mydomain.com)  ->  "Next"  ->  create a password for the Directory Services Mode (DSRM) password  ->  "Next"  ->  Uncheck the box for "Create DNS delegation"  ->  "Next"  ->  click on "Next" again until you get to "Prerequisites Check"  -> click on "Install" to confirm the forest installation (tbc).
 </p>
 <br />
+
+
+<p>
+<img src="https://i.imgur.com/0LC4vBk.png" height="100%" width="100%" alt="Configuration step"/>
+</p>
+<p>
+-You should be automatically logged off the Domain Controller VM as it has now been (tbc).
+
+This step officially promotes the Server VM to a domain controller by installing the necessary domain services and configuring it as the root of a new Active Directory forest (e.g., mydomain.com). This establishes the foundational structure for the domain, including the domain naming system and security boundaries. The automatic logoff indicates the server is restarting to finalize the domain controller configuration.
+</p>
+<br />
+
 
 
 
