@@ -186,6 +186,8 @@ Since we previously configured the Client VM DNS settings with the private IP ad
 </p>
 <p>
 -For organizational purposes, you can also create a "_CLIENTS" OU and drag the Client VM into it.
+
+Step 7 involve integrating the Client VM into the central management of the domain. By joining the domain, the client VM can be managed by domain policies, and users can log in using their domain accounts, simplifying administration and enhancing security.
 </p>
 <br />
 
