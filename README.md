@@ -196,7 +196,7 @@ Step 7 involve integrating the Client VM into the central management of the doma
 
 <h2>Active Directory Deployment and Configuration completed!</h2>
 
-<b>We've successfully installed Active Directory on the domain controller VM, created OUs for organizational purposes, created a domain admin user account, and joined the client VM to the domain. In the next lab found [here](https://github.com/YohanLB09/Active-Directory-User-Provisioning-and-GPO_Config), we'll create users in Powershell by running a script, and then manage the accounts and group policy.  Remember to stop the VMs in the Azure Portal when not in use to manage costs effectively.</b>
+<b>We've successfully installed Active Directory on the domain controller VM, created OUs for organizational purposes, created a domain admin user account, and joined the client VM to the domain. In the next lab found [here](https://github.com/YohanLB09/Active-Directory-User-Provisioning-Remote-Access-and-Account-Management), we'll create users in Powershell by running a script, and then manage the accounts and group policy.  Remember to stop the VMs in the Azure Portal when not in use to manage costs effectively.</b>
 <br />
 <br />
 </p>
